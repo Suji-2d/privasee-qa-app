@@ -1,20 +1,42 @@
 # Question and Answer App
 
 ## Overview
-- [Express.js CRUD Application](#expressjs-crud-application)
-- [Tech Stack](#tech-stack)
+- [Database](#database)
+  - [Table Structure](#table-structure)
 - [Architecture](#architecture)
+- [Back End - CRUD Application](#Back-End-CRUD-Application)
+- [Tech Stack](#tech-stack)
 - [TF-IDF Usage Explanation](#tf-idf-usage-explanation)
 - [Code Usage](#code-usage)
   - [Installation](#installation)
   - [Running the Server](#running-the-server)
   - [API Endpoints](#api-endpoints)
-- [Database](#database)
-  - [Table Structure](#table-structure)
-- [Front End](#front-end)
+- [Front End](#front-end-React-web-Application)
 - [Features](#features)
 
-# Express.js CRUD Application
+
+## Database
+### Table Structure
+
+| Property        | Type               | Description                                                                                            |
+|-----------------|--------------------|--------------------------------------------------------------------------------------------------------|
+| _recordId       | int                | The ID of the question, incremental integer                                                           |
+| Company Name    | string             | Name of the company. For this exercise we’ll assume there is only one company (of which we’re part of) called “Test Company” |
+| _companyId      | int                | The ID of the company, we can use a random set of numbers                                             |
+| Question        | string             | Question being asked                                                                                   |
+| Answer          | string             | Answer provided by the user                                                                           |
+| Created At      | date               | ISO date in which it was created                                                                      |
+| Created By      | string (email)     | Email of the user who created the question                                                            |
+| Updated At      | date               | ISO date in which it was last updated                                                                 |
+| Updated By      | string (email)     | Email of the user who last created the question                                                       |
+| Assigned To     | string (email)     | Email of the person to whom the question is assigned. This can be null if never assigned to anyone or if answered on creation. |
+| Properties      | list of comma separated key:value | e.g. section:Vendor Information,vendor:IB                                                            |
+
+
+## Architecture
+![Architecture](Architecture.png)
+
+# Back End CRUD Application
 This Express.js application is designed to provide APIs for performing CRUD operations (Create, Read, Update, Delete) on questions and answers. It utilizes a service like Airtable to store the data and implements an API capable of fuzzy searching within the question:answer pairs available.
 
 ## Tech Stack
@@ -31,24 +53,6 @@ From a non-technical perspective, TF-IDF efficiently analyzes keyword and phrase
 
 
 ## Code Usage
-
-### Installation
-
-1. Clone the repository:
-
-   ```
-   git clone <repository-url>
-    ```
-2. Install dependencies:
-    ```
-    npm install
-    ```
-### Running the Server
-1. To start the Express.js server, use the following command:
-    ```
-    npm start
-    ```
-The server will be running on port 5121 by default.
 
 ### API Endpoints
 1. Get all records - Retrieve all records stored in the database.
@@ -80,32 +84,19 @@ The server will be running on port 5121 by default.
     ```
     PUT /update-records
     ```
-## Database
-### Table Structure
 
-| Property        | Type               | Description                                                                                            |
-|-----------------|--------------------|--------------------------------------------------------------------------------------------------------|
-| _recordId       | int                | The ID of the question, incremental integer                                                           |
-| Company Name    | string             | Name of the company. For this exercise we’ll assume there is only one company (of which we’re part of) called “Test Company” |
-| _companyId      | int                | The ID of the company, we can use a random set of numbers                                             |
-| Question        | string             | Question being asked                                                                                   |
-| Answer          | string             | Answer provided by the user                                                                           |
-| Created At      | date               | ISO date in which it was created                                                                      |
-| Created By      | string (email)     | Email of the user who created the question                                                            |
-| Updated At      | date               | ISO date in which it was last updated                                                                 |
-| Updated By      | string (email)     | Email of the user who last created the question                                                       |
-| Assigned To     | string (email)     | Email of the person to whom the question is assigned. This can be null if never assigned to anyone or if answered on creation. |
-| Properties      | list of comma separated key:value | e.g. section:Vendor Information,vendor:IB                                                            |
+## UI
+![UI](UI.jpge)
 
-## Architecture
-![Architecture](Architecture.png)
-
-## Front End
+# Front End React web application
 The front end of this project is built using a modern web framework, React.js, providing a user-friendly interface for managing questions and answers. The user interface allows users to perform various actions such as creating, editing, deleting questions and answers, assigning questions to users, delegating questions, and filtering questions based on assigned users and custom properties.
 
 ### Technologies Used
 Front End: React.js
-Styling: Tailwind CSS / Material-UI
+Styling: Tailwind CSS 
+
+## Tailwind CSS Usage Explanation
+Tailwind CSS is a utility-first CSS framework that facilitates rapid web development by providing a comprehensive set of pre-designed utility classes, allowing developers to efficiently style HTML elements without writing custom CSS. Its modular and responsive approach, coupled with extensive customization options, ensures consistent and performant UI designs across projects while promoting code efficiency and maintainability.
 
 ## Features
 *User-Friendly Interface:* Intuitive design for easy navigation and seamless interaction.
