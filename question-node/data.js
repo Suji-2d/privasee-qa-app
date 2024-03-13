@@ -1,5 +1,6 @@
-const airtableApiKey = 'pat7kWTd6twwtiv8Y.719db2c7d7a2f18c2135470bc0b0e35517eb0d812ed08c0abcb655dcb98f52e1';
 
+require('dotenv').config(); 
+const airtableApiKey = process.env.API_KEY;
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: airtableApiKey}).base('appj92cNtMJZ2qxlH');
 
