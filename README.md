@@ -87,7 +87,7 @@ From a non-technical perspective, TF-IDF efficiently analyzes keyword and phrase
     ```
 
 ## UI
-![UI](UI.jpge)
+![UI](UI.png)
 
 # Front End React web application
 The front end of this project is built using a modern web framework, React.js, providing a user-friendly interface for managing questions and answers. The user interface allows users to perform various actions such as creating, editing, deleting questions and answers, assigning questions to users, delegating questions, and filtering questions based on assigned users and custom properties.
