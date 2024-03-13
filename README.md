@@ -27,7 +27,7 @@ This Express.js application is designed to provide APIs for performing CRUD oper
 ## Architecture
 ![Architecture](images/architecture.jpg)
 
-## TF-IDF Usage Explaination
+## TF-IDF Usage Explanation
 TF-IDF (Term Frequency-Inverse Document Frequency) is employed for its technical advantages such as memory efficiency and computational lightness. It utilizes sparse matrix representations and does not require training data, making it versatile across different domains.
 
 From a non-technical perspective, TF-IDF efficiently analyzes keyword and phrase frequencies. While more complex language models could be considered for future endeavors such as AI-driven question and answer completion, TF-IDF is deemed suitable for the current requirements, allowing flexibility for advanced techniques in the future.
