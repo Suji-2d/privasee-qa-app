@@ -1,4 +1,5 @@
 # Question and Answer App
+This project aims to develop a user-friendly web application for managing questions and answers. Users can create, edit, assign, and delegate questions and answers efficiently. The system also supports custom properties, history logs, and various filtering options for enhanced usability.
 
 ## Overview
 - [Database](#database)
