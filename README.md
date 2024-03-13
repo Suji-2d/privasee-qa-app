@@ -24,9 +24,6 @@ This Express.js application is designed to provide APIs for performing CRUD oper
 - **Natural**: A natural language processing library for Node.js, used for TF-IDF (Term Frequency-Inverse Document Frequency) calculations.
 - **Airtable**: A cloud service for creating, managing, and sharing databases, used as a storage service for the application's data.
 
-## Architecture
-![Architecture](Architecture.jpg)
-
 ## TF-IDF Usage Explanation
 TF-IDF (Term Frequency-Inverse Document Frequency) is employed for its technical advantages such as memory efficiency and computational lightness. It utilizes sparse matrix representations and does not require training data, making it versatile across different domains.
 
@@ -100,6 +97,8 @@ The server will be running on port 5121 by default.
 | Assigned To     | string (email)     | Email of the person to whom the question is assigned. This can be null if never assigned to anyone or if answered on creation. |
 | Properties      | list of comma separated key:value | e.g. section:Vendor Information,vendor:IB                                                            |
 
+## Architecture
+![Architecture](Architecture.png)
 
 ## Front End
 
