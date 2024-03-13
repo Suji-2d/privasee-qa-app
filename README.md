@@ -100,16 +100,16 @@ Styling: Tailwind CSS
 Tailwind CSS is a utility-first CSS framework that facilitates rapid web development by providing a comprehensive set of pre-designed utility classes, allowing developers to efficiently style HTML elements without writing custom CSS. Its modular and responsive approach, coupled with extensive customization options, ensures consistent and performant UI designs across projects while promoting code efficiency and maintainability.
 
 ## Features
-*User-Friendly Interface:* Intuitive design for easy navigation and seamless interaction.
-*Question Creation:* Users can create new questions with relevant details.
-*Answer Addition and Editing:* Ability to add and modify answers for existing questions.
-*Question Assignment:* Users can assign questions to specific individuals.
-*Bulk Assignment:* Option to assign multiple questions to a user in bulk, overwriting previous assignments if any.
-*Delegation:* Users can delegate questions to others using their email addresses.
-*Custom Properties/Tags:* Creation of custom key-value pairs linked to questions for better organization.
-*Single User Assignment:* Each question can only be assigned to a single user at a time.
-*History Logs:* Questions maintain a history log showing creation, last update, and the user who made the changes.
-*Filtering Options:* Users can filter questions and answers based on assigned user and custom properties.
-*Fuzzy Search:* Ability to perform fuzzy searches to find relevant questions and answers efficiently.
+- *User-Friendly Interface:* Intuitive design for easy navigation and seamless interaction.
+- *Question Creation:* Users can create new questions with relevant details.
+- *Answer Addition and Editing:* Ability to add and modify answers for existing questions.
+- *Question Assignment:* Users can assign questions to specific individuals.
+- *Bulk Assignment:* Option to assign multiple questions to a user in bulk, overwriting previous assignments if any.
+- *Delegation:* Users can delegate questions to others using their email addresses.
+- *Custom Properties/Tags:* Creation of custom key-value pairs linked to questions for better organization.
+- *Single User Assignment:* Each question can only be assigned to a single user at a time.
+- *History Logs:* Questions maintain a history log showing creation, last update, and the user who made the changes.
+- *Filtering Options:* Users can filter questions and answers based on assigned user and custom properties.
+- *Fuzzy Search:* Ability to perform fuzzy searches to find relevant questions and answers efficiently.
 
 
