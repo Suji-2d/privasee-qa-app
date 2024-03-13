@@ -101,5 +101,23 @@ The server will be running on port 5121 by default.
 ![Architecture](Architecture.png)
 
 ## Front End
+The front end of this project is built using a modern web framework, React.js, providing a user-friendly interface for managing questions and answers. The user interface allows users to perform various actions such as creating, editing, deleting questions and answers, assigning questions to users, delegating questions, and filtering questions based on assigned users and custom properties.
+
+### Technologies Used
+Front End: React.js
+Styling: Tailwind CSS / Material-UI
 
 ## Features
+*User-Friendly Interface:* Intuitive design for easy navigation and seamless interaction.
+*Question Creation:* Users can create new questions with relevant details.
+*Answer Addition and Editing:* Ability to add and modify answers for existing questions.
+*Question Assignment:* Users can assign questions to specific individuals.
+*Bulk Assignment:* Option to assign multiple questions to a user in bulk, overwriting previous assignments if any.
+*Delegation:* Users can delegate questions to others using their email addresses.
+*Custom Properties/Tags:* Creation of custom key-value pairs linked to questions for better organization.
+*Single User Assignment:* Each question can only be assigned to a single user at a time.
+*History Logs:* Questions maintain a history log showing creation, last update, and the user who made the changes.
+*Filtering Options:* Users can filter questions and answers based on assigned user and custom properties.
+*Fuzzy Search:* Ability to perform fuzzy searches to find relevant questions and answers efficiently.
+
+
